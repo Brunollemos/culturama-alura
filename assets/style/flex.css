@@ -31,6 +31,7 @@
     flex-wrap: wrap;
     column-gap: 1.5rem;
     row-gap: 1rem;
+    justify-content: center;
 }
 
 .eventos__item {
@@ -46,6 +47,9 @@
     }
 
     /* Categorias */
+    .eventos__lista {
+        justify-content: end;
+    }
 
     .categorias__lista {
         flex-wrap: wrap;
