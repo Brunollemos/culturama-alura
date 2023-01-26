@@ -12,6 +12,38 @@
     grid-row: 2/4;
 }
 
+.eventos__item {
+    display: grid;
+    grid-template-areas:
+        "imagem imagem imagem"
+        "nome nome ."
+        "data data ."
+        "local local botao";
+    align-items: center;
+}
+
+.eventos__item img {
+    grid-area: imagem;
+}
+
+.eventos__item h3 {
+    grid-area: nome;
+    align-self: center;
+}
+
+.eventos__item h4 {
+    grid-area: data;
+}
+
+.eventos__item h5 {
+    grid-area: local;
+}
+
+.eventos__item button {
+    grid-area: botao;
+    justify-self: end;
+}
+
 @media (min-width: 720px) {
     .banner {
         grid-template-columns: calc(50% - 0.75rem) auto auto;
